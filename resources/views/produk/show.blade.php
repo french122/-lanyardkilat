@@ -157,13 +157,11 @@
 
             <h2 class="text-3xl text-gray-900">Mungkin Anda Juga Suka</h2>
         </div>
-
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             @foreach($relatedProducts as $related)
             <div class="group card-lift">
                 <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                    <img src="{{ asset('images/products/' . $related['image']) }}"
-                         alt="{{ $related['name'] }}"
+                        <img src="{{ asset('images/hero/keychain.jpg') }}" alt="Lanyard 2.5 cm"
                          class="w-full h-full object-cover transition-transform duration-500"
                          onerror="this.src='https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=300&q=80'">
                 </div>

@@ -51,7 +51,7 @@
     <div class="h-[calc(100vh-80px)] flex">
         <!-- Panel 1 - Premium Quality -->
         <div class="panel-item relative overflow-hidden cursor-pointer group">
-            <img src="{{ asset('images/hero/bg-1.jpg') }}"
+            <img src="{{ asset('images/hero/lanyard.webp') }}"
                  alt="Premium Quality"
                  onerror="this.src='https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=800&q=80'"
                  class="w-full h-full object-cover">
@@ -76,7 +76,7 @@
 
         <!-- Panel 2 - Custom Design -->
         <div class="panel-item relative overflow-hidden cursor-pointer group">
-            <img src="{{ asset('images/hero/bg-2.jpg') }}"
+            <img src="{{ asset('images/hero/wristband.jpg') }}"
                  alt="Custom Design"
                  onerror="this.src='https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80'"
                  class="w-full h-full object-cover">
@@ -101,7 +101,7 @@
 
         <!-- Panel 3 - Fast Service -->
         <div class="panel-item relative overflow-hidden cursor-pointer group">
-            <img src="{{ asset('images/hero/bg-3.jpg') }}"
+            <img src="{{ asset('images/hero/keychain.jpg') }}"
                  alt="Fast Service"
                  onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80'"
                  class="w-full h-full object-cover">
@@ -126,7 +126,7 @@
 
         <!-- Panel 4 - Best Price -->
         <div class="panel-item relative overflow-hidden cursor-pointer group">
-            <img src="{{ asset('images/hero/bg-4.jpg') }}"
+            <img src="{{ asset('images/hero/idcard.png') }}"
                  alt="Best Price"
                  onerror="this.src='https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80'"
                  class="w-full h-full object-cover">
@@ -151,7 +151,7 @@
 
         <!-- Panel 5 - Trusted Partner -->
         <div class="panel-item relative overflow-hidden cursor-pointer group">
-            <img src="{{ asset('images/hero/bg-5.jpg') }}"
+            <img src="{{ asset('images/hero/cardholder.jpg') }}"
                  alt="Trusted Partner"
                  onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80'"
                  class="w-full h-full object-cover">
@@ -501,7 +501,7 @@
                 <!-- Product 1 -->
                 <div class="group flex-shrink-0 w-[280px] card-lift" data-reveal data-reveal-delay="1">
                     <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/lanyard-2-5cm.jpg') }}" alt="Lanyard 2.5 cm"
+                        <img src="{{ asset('images/hero/lanyards.png') }}" alt="Lanyard 2.5 cm"
                              class="w-full h-full object-cover transition-transform duration-500"
                              onerror="this.src='https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400&q=80'">
                     </div>
@@ -526,7 +526,7 @@
                 <!-- Product 2 -->
                 <div class="group flex-shrink-0 w-[280px] card-lift" data-reveal data-reveal-delay="2">
                     <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/lanyard-2cm.jpg') }}" alt="Lanyard 2 cm"
+                        <img src="{{ asset('images/hero/lanyardp.png') }}" alt="Lanyard 2 cm"
                              class="w-full h-full object-cover transition-transform duration-500"
                              onerror="this.src='https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&q=80'">
                     </div>
@@ -551,7 +551,7 @@
                 <!-- Product 3 -->
                 <div class="group flex-shrink-0 w-[280px] card-lift" data-reveal data-reveal-delay="3">
                     <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/lanyard-1-5cm.jpg') }}" alt="Lanyard 1.5 cm"
+                        <img src="{{ asset('images/hero/lanyardq.png') }}" alt="Lanyard 1.5 cm"
                              class="w-full h-full object-cover transition-transform duration-500"
                              onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80'">
                     </div>
@@ -576,13 +576,13 @@
                 <!-- Product 4 -->
                 <div class="group flex-shrink-0 w-[280px] card-lift" data-reveal data-reveal-delay="4">
                     <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/lanyard-1cm.jpg') }}" alt="Lanyard 1 cm"
+                        <img src="{{ asset('images/hero/keychain.jpg') }}" alt="Lanyard 1 cm"
                              class="w-full h-full object-cover transition-transform duration-500"
                              onerror="this.src='https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80'">
                     </div>
                     <div class="pt-4">
                         <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">Lanyard 1 cm</h3>
+                            <h3 class="text-gray-900 font-medium text-sm">Keychain</h3>
                             <div class="flex items-center gap-1 text-xs">
                                 <span class="text-yellow-500">★★★★★</span>
                                 <span class="text-gray-500">18 Reviews</span>
@@ -601,13 +601,13 @@
                 <!-- Product 5 -->
                 <div class="group flex-shrink-0 w-[280px] card-lift">
                     <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/id-card-holder.jpg') }}" alt="ID Card Holder"
+                        <img src="{{ asset('images/hero/idcard.png') }}" alt="ID Card Holder"
                              class="w-full h-full object-cover transition-transform duration-500"
                              onerror="this.src='https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400&q=80'">
                     </div>
                     <div class="pt-4">
                         <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">ID Card Holder</h3>
+                            <h3 class="text-gray-900 font-medium text-sm">ID Card</h3>
                             <div class="flex items-center gap-1 text-xs">
                                 <span class="text-yellow-500">★★★★★</span>
                                 <span class="text-gray-500">22 Reviews</span>
@@ -626,13 +626,13 @@
                 <!-- Product 6 -->
                 <div class="group flex-shrink-0 w-[280px] card-lift">
                     <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/yoyo-id.jpg') }}" alt="Yoyo ID"
+                        <img src="{{ asset('images/hero/wristband.jpg') }}" alt="Yoyo ID"
                              class="w-full h-full object-cover transition-transform duration-500"
                              onerror="this.src='https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&q=80'">
                     </div>
                     <div class="pt-4">
                         <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">Yoyo ID</h3>
+                            <h3 class="text-gray-900 font-medium text-sm">Wristband</h3>
                             <div class="flex items-center gap-1 text-xs">
                                 <span class="text-yellow-500">★★★★★</span>
                                 <span class="text-gray-500">15 Reviews</span>
@@ -651,13 +651,13 @@
                 <!-- Product 7 -->
                 <div class="group flex-shrink-0 w-[280px] card-lift">
                     <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/lanyard-polyester.jpg') }}" alt="Lanyard Polyester"
+                        <img src="{{ asset('images/hero/cardholder.jpg') }}" alt="Lanyard Polyester"
                              class="w-full h-full object-cover transition-transform duration-500"
                              onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80'">
                     </div>
                     <div class="pt-4">
                         <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">Lanyard Polyester</h3>
+                            <h3 class="text-gray-900 font-medium text-sm">Card Holder</h3>
                             <div class="flex items-center gap-1 text-xs">
                                 <span class="text-yellow-500">★★★★★</span>
                                 <span class="text-gray-500">27 Reviews</span>
@@ -668,131 +668,6 @@
                             <span class="text-sm font-medium text-gray-900">Rp.8000<span class="text-xs text-gray-400">/pcs</span></span>
                         </div>
                         <a href="{{ route('produk.show', 'lanyard-polyester') }}" class="inline-block px-4 py-2 border border-gray-400 text-gray-700 text-xs hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors">
-                            Lihat Produk
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 8 -->
-                <div class="group flex-shrink-0 w-[280px] card-lift">
-                    <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/lanyard-satin.jpg') }}" alt="Lanyard Satin"
-                             class="w-full h-full object-cover transition-transform duration-500"
-                             onerror="this.src='https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80'">
-                    </div>
-                    <div class="pt-4">
-                        <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">Lanyard Satin</h3>
-                            <div class="flex items-center gap-1 text-xs">
-                                <span class="text-yellow-500">★★★★★</span>
-                                <span class="text-gray-500">19 Reviews</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center mb-3">
-                            <p class="text-xs text-gray-500">Minimum order 50 pcs</p>
-                            <span class="text-sm font-medium text-gray-900">Rp.9000<span class="text-xs text-gray-400">/pcs</span></span>
-                        </div>
-                        <a href="{{ route('produk.show', 'lanyard-satin') }}" class="inline-block px-4 py-2 border border-gray-400 text-gray-700 text-xs hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors">
-                            Lihat Produk
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 9 -->
-                <div class="group flex-shrink-0 w-[280px] card-lift">
-                    <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/lanyard-nylon.jpg') }}" alt="Lanyard Nylon"
-                             class="w-full h-full object-cover transition-transform duration-500"
-                             onerror="this.src='https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400&q=80'">
-                    </div>
-                    <div class="pt-4">
-                        <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">Lanyard Nylon</h3>
-                            <div class="flex items-center gap-1 text-xs">
-                                <span class="text-yellow-500">★★★★★</span>
-                                <span class="text-gray-500">25 Reviews</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center mb-3">
-                            <p class="text-xs text-gray-500">Minimum order 50 pcs</p>
-                            <span class="text-sm font-medium text-gray-900">Rp.8500<span class="text-xs text-gray-400">/pcs</span></span>
-                        </div>
-                        <a href="{{ route('produk') }}" class="inline-block px-4 py-2 border border-gray-400 text-gray-700 text-xs hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors">
-                            Lihat Produk
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 10 -->
-                <div class="group flex-shrink-0 w-[280px] card-lift">
-                    <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden img-zoom">
-                        <img src="{{ asset('images/products/lanyard-tubular.jpg') }}" alt="Lanyard Tubular"
-                             class="w-full h-full object-cover transition-transform duration-500"
-                             onerror="this.src='https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=400&q=80'">
-                    </div>
-                    <div class="pt-4">
-                        <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">Lanyard Tubular</h3>
-                            <div class="flex items-center gap-1 text-xs">
-                                <span class="text-yellow-500">★★★★★</span>
-                                <span class="text-gray-500">21 Reviews</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center mb-3">
-                            <p class="text-xs text-gray-500">Minimum order 50 pcs</p>
-                            <span class="text-sm font-medium text-gray-900">Rp.7500<span class="text-xs text-gray-400">/pcs</span></span>
-                        </div>
-                        <a href="{{ route('produk') }}" class="inline-block px-4 py-2 border border-gray-400 text-gray-700 text-xs hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors">
-                            Lihat Produk
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 11 -->
-                <div class="group flex-shrink-0 w-[280px] card-lift">
-                    <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden">
-                        <img src="{{ asset('images/products/lanyard-woven.jpg') }}" alt="Lanyard Woven"
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80'">
-                    </div>
-                    <div class="pt-4">
-                        <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">Lanyard Woven</h3>
-                            <div class="flex items-center gap-1 text-xs">
-                                <span class="text-yellow-500">★★★★★</span>
-                                <span class="text-gray-500">17 Reviews</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center mb-3">
-                            <p class="text-xs text-gray-500">Minimum order 100 pcs</p>
-                            <span class="text-sm font-medium text-gray-900">Rp.10000<span class="text-xs text-gray-400">/pcs</span></span>
-                        </div>
-                        <a href="{{ route('produk') }}" class="inline-block px-4 py-2 border border-gray-400 text-gray-700 text-xs hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors">
-                            Lihat Produk
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Product 12 -->
-                <div class="group flex-shrink-0 w-[280px]">
-                    <div class="bg-[#e8e6e1] aspect-square relative overflow-hidden">
-                        <img src="{{ asset('images/products/id-card-kulit.jpg') }}" alt="ID Card Holder Kulit"
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                             onerror="this.src='https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80'">
-                    </div>
-                    <div class="pt-4">
-                        <div class="flex justify-between items-start mb-1">
-                            <h3 class="text-gray-900 font-medium text-sm">ID Card Holder Kulit</h3>
-                            <div class="flex items-center gap-1 text-xs">
-                                <span class="text-yellow-500">★★★★★</span>
-                                <span class="text-gray-500">14 Reviews</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center mb-3">
-                            <p class="text-xs text-gray-500">Minimum order 50 pcs</p>
-                            <span class="text-sm font-medium text-gray-900">Rp.15000<span class="text-xs text-gray-400">/pcs</span></span>
-                        </div>
-                        <a href="{{ route('produk') }}" class="inline-block px-4 py-2 border border-gray-400 text-gray-700 text-xs hover:bg-gray-900 hover:text-white hover:border-gray-900 transition-colors">
                             Lihat Produk
                         </a>
                     </div>
@@ -813,19 +688,19 @@
                 <div class="grid grid-cols-2 gap-4">
                     <!-- Top Left Image -->
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&q=80"
+                        <img src="{{ asset('images/hero/send.jpg') }}"
                              alt="Lanyard Production"
                              class="w-full h-48 object-cover rounded-2xl shadow-lg">
                     </div>
                     <!-- Top Right Image (Larger) -->
                     <div class="row-span-2">
-                        <img src="https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=400&q=80"
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80"
                              alt="Lanyard Quality"
                              class="w-full h-full object-cover rounded-2xl shadow-lg" style="min-height: 400px;">
                     </div>
                     <!-- Bottom Left Image -->
                     <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80"
+                        <img src="{{ asset('images/hero/print.jpg') }}"
                              alt="Lanyard Custom"
                              class="w-full h-48 object-cover rounded-2xl shadow-lg">
                     </div>
