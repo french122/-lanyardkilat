@@ -5,6 +5,7 @@
 
 @push('styles')
 <style>
+    /* Desktop Panel Styles */
     .panel-item {
         flex: 1;
         transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,6 +25,44 @@
     }
     .panel-item:hover .content-card {
         transform: translateY(0);
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+        .panel-item {
+            flex: none !important;
+            height: 75vh;
+            min-height: 450px;
+            scroll-snap-align: start;
+        }
+        .panel-item .content-card {
+            transform: translateY(0) !important;
+            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0) 100%);
+            backdrop-filter: blur(10px);
+            padding: 2rem 1.5rem !important;
+        }
+        .panel-item .content-card h2 {
+            color: white;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+        .panel-item .content-card p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 0.9rem;
+        }
+        .panel-item .content-card span {
+            color: rgba(255, 255, 255, 0.9);
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .panel-item .content-card a {
+            color: white;
+            border-color: rgba(255, 255, 255, 0.7);
+            font-weight: 600;
+        }
+        .panel-item .content-card a:hover {
+            border-color: white;
+        }
     }
 
     /* Blog Slider Auto Scroll Animation */
@@ -48,7 +87,7 @@
 
 <!-- Hero Section - 5 Panel Gallery Layout -->
 <section class="pt-20 bg-white">
-    <div class="h-[calc(100vh-80px)] flex">
+    <div class="h-[calc(100vh-80px)] md:h-[calc(100vh-80px)] flex flex-col md:flex-row overflow-y-auto md:overflow-y-hidden snap-y md:snap-none snap-mandatory">
         <!-- Panel 1 - Premium Quality -->
         <div class="panel-item relative overflow-hidden cursor-pointer group">
             <img src="{{ asset('images/hero/lanyard.webp') }}"
@@ -56,15 +95,15 @@
                  onerror="this.src='https://images.unsplash.com/photo-1586339949916-3e9457bef6d3?w=800&q=80'"
                  class="w-full h-full object-cover">
             <!-- Overlay -->
-            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500"></div>
+            <div class="absolute inset-0 bg-black/10 md:group-hover:bg-black/5 bg-gradient-to-t md:bg-none from-black/40 via-transparent to-transparent transition-colors duration-500"></div>
 
             <!-- Content Overlay Card -->
-            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-6 lg:p-8">
-                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-4">MOOD: PREMIUM QUALITY</span>
-                <h2 class="text-xl lg:text-2xl text-gray-900 mb-3 leading-tight">
+            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-4 md:p-6 lg:p-8">
+                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-3 md:mb-4">MOOD: PREMIUM QUALITY</span>
+                <h2 class="text-lg md:text-xl lg:text-2xl text-gray-900 mb-2 md:mb-3 leading-tight">
                     Lanyard Berkualitas Tinggi
                 </h2>
-                <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed mb-4 md:mb-5">
                     Bahan premium dengan hasil cetak tajam dan tahan lama. Tersedia berbagai pilihan bahan berkualitas.
                 </p>
                 <a href="{{ route('produk') }}"
@@ -81,15 +120,15 @@
                  onerror="this.src='https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&q=80'"
                  class="w-full h-full object-cover">
             <!-- Overlay -->
-            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500"></div>
+            <div class="absolute inset-0 bg-black/10 md:group-hover:bg-black/5 bg-gradient-to-t md:bg-none from-black/40 via-transparent to-transparent transition-colors duration-500"></div>
 
             <!-- Content Overlay Card -->
-            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-6 lg:p-8">
-                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-4">MOOD: CUSTOM DESIGN</span>
-                <h2 class="text-xl lg:text-2xl text-gray-900 mb-3 leading-tight">
+            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-4 md:p-6 lg:p-8">
+                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-3 md:mb-4">MOOD: CUSTOM DESIGN</span>
+                <h2 class="text-lg md:text-xl lg:text-2xl text-gray-900 mb-2 md:mb-3 leading-tight">
                     Desain Sesuai Keinginan
                 </h2>
-                <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed mb-4 md:mb-5">
                     Tim desainer kami siap membantu mewujudkan desain impian Anda dengan revisi unlimited.
                 </p>
                 <a href="https://wa.me/6281316509191?text=Halo%20LanyardKendal,%20saya%20ingin%20konsultasi%20desain"
@@ -106,15 +145,15 @@
                  onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80'"
                  class="w-full h-full object-cover">
             <!-- Overlay -->
-            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500"></div>
+            <div class="absolute inset-0 bg-black/10 md:group-hover:bg-black/5 bg-gradient-to-t md:bg-none from-black/40 via-transparent to-transparent transition-colors duration-500"></div>
 
             <!-- Content Overlay Card -->
-            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-6 lg:p-8">
-                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-4">MOOD: FAST SERVICE</span>
-                <h2 class="text-xl lg:text-2xl text-gray-900 mb-3 leading-tight">
+            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-4 md:p-6 lg:p-8">
+                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-3 md:mb-4">MOOD: FAST SERVICE</span>
+                <h2 class="text-lg md:text-xl lg:text-2xl text-gray-900 mb-2 md:mb-3 leading-tight">
                     Same-Day Delivery
                 </h2>
-                <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed mb-4 md:mb-5">
                     Proses produksi cepat 1 hari kerja tanpa mengorbankan kualitas. Pengiriman tepat waktu.
                 </p>
                 <a href="https://wa.me/6281316509191?text=Halo%20LanyardKendal,%20saya%20butuh%20lanyard%20segera"
@@ -131,15 +170,15 @@
                  onerror="this.src='https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80'"
                  class="w-full h-full object-cover">
             <!-- Overlay -->
-            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500"></div>
+            <div class="absolute inset-0 bg-black/10 md:group-hover:bg-black/5 bg-gradient-to-t md:bg-none from-black/40 via-transparent to-transparent transition-colors duration-500"></div>
 
             <!-- Content Overlay Card -->
-            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-6 lg:p-8">
-                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-4">MOOD: BEST PRICE</span>
-                <h2 class="text-xl lg:text-2xl text-gray-900 mb-3 leading-tight">
+            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-4 md:p-6 lg:p-8">
+                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-3 md:mb-4">MOOD: BEST PRICE</span>
+                <h2 class="text-lg md:text-xl lg:text-2xl text-gray-900 mb-2 md:mb-3 leading-tight">
                     Harga Terjangkau
                 </h2>
-                <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed mb-4 md:mb-5">
                     Kualitas premium dengan harga bersahabat. Dapatkan diskon untuk pemesanan jumlah banyak.
                 </p>
                 <a href="{{ route('produk') }}"
@@ -156,15 +195,15 @@
                  onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80'"
                  class="w-full h-full object-cover">
             <!-- Overlay -->
-            <div class="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500"></div>
+            <div class="absolute inset-0 bg-black/10 md:group-hover:bg-black/5 bg-gradient-to-t md:bg-none from-black/40 via-transparent to-transparent transition-colors duration-500"></div>
 
             <!-- Content Overlay Card -->
-            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-6 lg:p-8">
-                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-4">MOOD: TRUSTED PARTNER</span>
-                <h2 class="text-xl lg:text-2xl text-gray-900 mb-3 leading-tight">
+            <div class="content-card absolute bottom-0 right-0 left-0 bg-white/60 backdrop-blur-md p-4 md:p-6 lg:p-8">
+                <span class="inline-block px-3 py-1.5 border border-gray-300 text-[10px] font-medium tracking-[0.15em] text-gray-600 mb-3 md:mb-4">MOOD: TRUSTED PARTNER</span>
+                <h2 class="text-lg md:text-xl lg:text-2xl text-gray-900 mb-2 md:mb-3 leading-tight">
                     1259+ Klien Puas
                 </h2>
-                <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed mb-4 md:mb-5">
                     Dipercaya perusahaan, instansi pemerintah, dan event organizer di seluruh Indonesia.
                 </p>
                 <a href="{{ route('portfolio') }}"
@@ -728,20 +767,20 @@
                     <!-- Left Column -->
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            <svg class="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
                             </svg>
                             <span class="text-gray-700">Print Sample Gratis</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            <svg class="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                             </svg>
                             <span class="text-gray-700">Produksi 1 Hari Jadi</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            <svg class="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
                             </svg>
                             <span class="text-gray-700">Gratis Ongkir Indonesia</span>
                         </div>
@@ -750,20 +789,21 @@
                     <!-- Right Column -->
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            <svg class="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                             </svg>
                             <span class="text-gray-700">Garansi 100%</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            <svg class="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
                             </svg>
                             <span class="text-gray-700">Sublimasi Printing 99%</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            <svg class="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"/>
                             </svg>
                             <span class="text-gray-700">Heat Press High-Pressure</span>
                         </div>

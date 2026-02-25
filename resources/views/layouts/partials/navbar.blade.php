@@ -15,23 +15,23 @@
                     </svg>
                 </button>
 
-                <!-- Lanyard Shop Button -->
-                <a href="{{ route('produk') }}" class="border border-gray-900 px-6 py-3 text-sm font-medium tracking-wider hover:bg-gray-900 hover:text-white transition-colors">
+                <!-- Lanyard Shop Button - Hidden on Mobile -->
+                <a href="{{ route('produk') }}" class="hidden md:inline-block border border-gray-900 px-6 py-3 text-sm font-medium tracking-wider hover:bg-gray-900 hover:text-white transition-colors">
                     LANYARD SHOP
                 </a>
             </div>
 
             <!-- Center - Logo -->
-            <div class="flex-shrink-0">
+            <div class="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 flex-shrink-0">
                 <a href="{{ route('home') }}" class="flex flex-col items-center group">
                     <!-- Logo Icon -->
                     <div class="text-3xl font-bold mb-1">
-                        <svg class="w-10 h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-8 h-8 md:w-10 md:h-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 5L30 15L20 35L10 15L20 5Z" fill="currentColor"/>
                             <path d="M15 12L25 12L20 25L15 12Z" fill="white"/>
                         </svg>
                     </div>
-                    <span class="text-xl font-bold tracking-widest text-gray-900">LANYARDKENDAL</span>
+                    <span class="text-base md:text-xl font-bold tracking-widest text-gray-900">LANYARDKENDAL</span>
                 </a>
             </div>
 
