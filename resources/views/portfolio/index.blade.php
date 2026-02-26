@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Portfolio - LanyardKendal')
+@section('title', 'Portfolio - MitraJogja')
 @section('description', 'Lihat portfolio hasil karya kami. Lebih dari 1259+ klien di seluruh Indonesia telah mempercayakan kebutuhan lanyard mereka pada kami.')
 
 @section('content')
@@ -393,7 +393,7 @@
                 Konsultasikan kebutuhan lanyard Anda. Kami bantu pilih bahan, cetak, dan finishing yang paling pas untuk kebutuhan Anda.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/6281316509191?text=Halo%20LanyardKendal,%20saya%20ingin%20konsultasi%20pembuatan%20lanyard"
+                <a href="https://wa.me/6281316509191?text=Halo%20MitraJogja,%20saya%20ingin%20konsultasi"
                    target="_blank" rel="noopener noreferrer"
                    class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-900 text-white font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -401,7 +401,7 @@
                     </svg>
                     Konsultasi via WhatsApp
                 </a>
-                <a href="{{ route('produk') }}"
+                <a href="{{ route('produk.index') }}"
                    class="inline-flex items-center justify-center px-8 py-4 border border-gray-900 text-gray-900 font-medium hover:bg-gray-900 hover:text-white transition-all">
                     Lihat Produk Kami
                 </a>

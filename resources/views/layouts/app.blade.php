@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title', 'LanyardKendal - Lanyard Custom Terpercaya')</title>
-    <meta name="description" content="@yield('description', 'Spesialis lanyard custom berkualitas. Konsultasi, bantuan desain, opsi pengiriman, dan garansi kualitas.')">
+    <title>@yield('title', 'MitraJogja - Solusi Terpercaya')</title>
+    <meta name="description" content="@yield('description', 'Spesialis layanan berkualitas. Konsultasi, bantuan desain, opsi pengiriman, dan garansi kualitas.')">
 
     <!-- Fonts - Luminaire Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,7 +91,7 @@
     (function() {
         // Create WhatsApp button via JavaScript so it's truly fixed
         var waBtn = document.createElement('a');
-        waBtn.href = 'https://wa.me/6281316509191?text=Halo%20LanyardKendal,%20saya%20ingin%20konsultasi%20pembuatan%20lanyard';
+        waBtn.href = 'https://wa.me/6281316509191?text=Halo%20MitraJogja,%20saya%20ingin%20konsultasi';
         waBtn.target = '_blank';
         waBtn.rel = 'noopener noreferrer';
         waBtn.id = 'wa-floating-button';

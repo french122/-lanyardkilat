@@ -7,7 +7,7 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 // Halaman Produk
-Route::get('/produk', [HomeController::class, 'produk'])->name('produk');
+Route::get('/produk', [HomeController::class, 'produk'])->name('produk.index');
 Route::get('/produk/{slug}', [HomeController::class, 'produkShow'])->name('produk.show');
 
 // Halaman Blog

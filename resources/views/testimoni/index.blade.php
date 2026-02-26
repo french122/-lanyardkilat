@@ -1,18 +1,18 @@
                                                                                                                     @extends('layouts.app')
 
-@section('title', 'Testimonial - LanyardKendal')
-@section('description', 'Lihat testimoni dan review dari pelanggan LanyardKendal yang puas dengan layanan kami.')
+@section('title', 'Testimonial - MitraJogja')
+@section('description', 'Lihat testimoni dan review dari pelanggan MitraJogja yang puas dengan layanan kami.')
 
 @section('content')
 
 <!-- Hero Section -->
-<section class="pt-32 pb-16 bg-[#e8e4df]">
+<section class="pt-20 sm:pt-32 pb-6 sm:pb-16 bg-[#e8e4df]">
     <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24">
         <div class="text-center" data-reveal>
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
+            <h1 class="text-2xl sm:text-4xl lg:text-6xl text-gray-900 mb-2 sm:mb-6 leading-tight">
                 Apa Kata Mereka?
             </h1>
-            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-sm sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
                 Ribuan pelanggan telah mempercayakan kebutuhan lanyard mereka kepada kami. Berikut adalah cerita kepuasan mereka.
             </p>
         </div>
@@ -20,11 +20,11 @@
 </section>
 
 <!-- Stats Section -->
-<section class="py-12 bg-white border-b border-gray-100">
+<section class="py-6 sm:py-12 bg-white border-b border-gray-100">
     <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" data-reveal>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center" data-reveal>
             <div>
-                <p class="text-3xl md:text-4xl font-medium text-gray-900">1259+</p>
+                <p class="text-2xl sm:text-3xl md:text-4xl font-medium text-gray-900">1259+</p>
                 <p class="text-sm text-gray-500 mt-1">Klien Puas</p>
             </div>
             <div>
@@ -44,7 +44,7 @@
 </section>
 
 <!-- Testimonial Grid Section -->
-<section class="py-20 bg-white">
+<section class="py-6 sm:py-20 bg-white">
     <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24">
 
         @php
@@ -82,7 +82,7 @@
             [
                 'rating' => 5,
                 'title' => 'Kualitas Terbaik',
-                'text' => 'Sudah bandingkan dengan beberapa vendor lain, LanyardKendal tetap yang terbaik dari segi kualitas dan harga. Sample gratis sangat membantu untuk approval design sebelum produksi massal.',
+                'text' => 'Sudah bandingkan dengan beberapa vendor lain, MitraJogja tetap yang terbaik dari segi kualitas dan harga. Sample gratis sangat membantu untuk approval design sebelum produksi massal.',
                 'name' => 'Budi Santoso',
                 'role' => 'Purchasing Manager',
                 'avatar' => 'avatar-4.jpg',
@@ -112,7 +112,7 @@
             [
                 'rating' => 5,
                 'title' => 'Sangat Memuaskan!',
-                'text' => 'Awalnya ragu karena ini pertama kali order online, tapi setelah lihat hasilnya langsung jatuh cinta! Warna sesuai dengan mockup, bahan lembut tapi kuat. Terima kasih LanyardKendal!',
+                'text' => 'Awalnya ragu karena ini pertama kali order online, tapi setelah lihat hasilnya langsung jatuh cinta! Warna sesuai dengan mockup, bahan lembut tapi kuat. Terima kasih MitraJogja!',
                 'name' => 'Rina Handayani',
                 'role' => 'Community Leader',
                 'avatar' => 'avatar-7.jpg',
@@ -133,12 +133,12 @@
         @endphp
 
         <!-- Testimonial Grid -->
-        <div class="grid md:grid-cols-2 gap-8" data-reveal>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8" data-reveal>
             @foreach($testimonials as $index => $testimonial)
-            <div class="group bg-[#f8f7f4] rounded-2xl overflow-hidden hover:shadow-lg transition-all duration-300 card-lift">
-                <div class="flex flex-col md:flex-row">
+            <div class="group bg-[#f8f7f4] overflow-hidden hover:shadow-lg transition-all duration-300 card-lift">
+                <div class="flex flex-col">
                     <!-- Product Image -->
-                    <div class="md:w-2/5 aspect-square md:aspect-auto relative overflow-hidden">
+                    <div class="w-full h-40 sm:h-52 relative overflow-hidden">
                         <img src="{{ asset('images/products/' . $testimonial['product_image']) }}"
                              alt="{{ $testimonial['product'] }}"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -152,7 +152,7 @@
                     </div>
 
                     <!-- Content -->
-                    <div class="md:w-3/5 p-6 md:p-8 flex flex-col justify-between">
+                    <div class="p-4 sm:p-6 flex flex-col justify-between">
                         <!-- Rating Stars -->
                         <div>
                             <div class="flex items-center gap-1 mb-3">
@@ -164,10 +164,10 @@
                             </div>
 
                             <!-- Title -->
-                            <h3 class="font-medium text-gray-900 text-lg mb-3">{{ $testimonial['title'] }}</h3>
+                            <h3 class="font-medium text-gray-900 text-sm sm:text-lg mb-2 sm:mb-3">{{ $testimonial['title'] }}</h3>
 
                             <!-- Text -->
-                            <p class="text-gray-600 text-sm leading-relaxed mb-6">{{ $testimonial['text'] }}</p>
+                            <p class="text-gray-600 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-6">{{ $testimonial['text'] }}</p>
                         </div>
 
                         <!-- Author -->
@@ -190,7 +190,7 @@
         </div>
 
         <!-- Load More Button -->
-        <div class="text-center mt-16" data-reveal>
+        <div class="text-center mt-8 sm:mt-16" data-reveal>
             <button class="px-8 py-4 bg-gray-900 text-white font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]">
                 Lihat Lebih Banyak
             </button>
@@ -199,7 +199,7 @@
 </section>
 
 <!-- CTA Section -->
-<section class="py-20 bg-[#e8e4df]" data-reveal>
+<section class="py-8 sm:py-20 bg-[#e8e4df]" data-reveal>
     <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl md:text-4xl text-gray-900 mb-6">
@@ -209,7 +209,7 @@
                 Bergabunglah dengan ribuan pelanggan yang telah puas dengan layanan kami. Konsultasikan kebutuhan lanyard Anda sekarang!
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/6281316509191?text=Halo%20LanyardKendal,%20saya%20ingin%20konsultasi%20pemesanan%20lanyard"
+                <a href="https://wa.me/6281316509191?text=Halo%20MitraJogja,%20saya%20ingin%20konsultasi"
                    target="_blank" rel="noopener noreferrer"
                    class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gray-900 text-white font-medium hover:bg-gray-800 transition-all hover:scale-[1.02]">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -217,7 +217,7 @@
                     </svg>
                     Hubungi via WhatsApp
                 </a>
-                <a href="{{ route('produk') }}"
+                <a href="{{ route('produk.index') }}"
                    class="inline-flex items-center justify-center px-8 py-4 border border-gray-900 text-gray-900 font-medium hover:bg-gray-900 hover:text-white transition-all">
                     Lihat Produk Kami
                 </a>

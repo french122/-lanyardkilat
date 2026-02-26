@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Hubungi Kami - LanyardKendal')
-@section('description', 'Hubungi LanyardKendal untuk konsultasi kebutuhan lanyard custom Anda. Respon cepat di jam operasional.')
+@section('title', 'Hubungi Kami - MitraJogja')
+@section('description', 'Hubungi MitraJogja untuk konsultasi kebutuhan Anda. Respon cepat di jam operasional.')
 
 @section('content')
 
@@ -141,7 +141,7 @@
                         <div class="flex-1">
                             <h3 class="text-xl font-medium text-gray-900 mb-2">WhatsApp</h3>
                             <p class="text-gray-600 mb-4">Chat langsung dengan tim kami untuk respons cepat</p>
-                            <a href="https://wa.me/6281316509191?text=Halo%20LanyardKendal,%20saya%20ingin%20konsultasi%20pembuatan%20lanyard"
+                            <a href="https://wa.me/6281316509191?text=Halo%20MitraJogja,%20saya%20ingin%20konsultasi"
                                target="_blank" rel="noopener noreferrer"
                                class="inline-flex items-center text-gray-900 font-medium hover:text-green-600 transition-colors">
                                 +62 813-1650-9191
@@ -164,17 +164,17 @@
                         <div class="flex-1">
                             <h3 class="text-xl font-medium text-gray-900 mb-2">Email</h3>
                             <p class="text-gray-600 mb-4">Kirim email untuk pertanyaan detail</p>
-                            <a href="mailto:contact@lanyardkendal.com"
+                            <a href="mailto:contact@mitrajogja.com"
                                class="inline-flex items-center text-gray-900 font-medium hover:text-gray-600 transition-colors">
-                                contact@lanyardkendal.com
+                                contact@mitrajogja.com
                                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                 </svg>
                             </a>
                             <br>
-                            <a href="mailto:marketing@lanyardkendal.com"
+                            <a href="mailto:marketing@mitrajogja.com"
                                class="inline-flex items-center text-gray-900 font-medium hover:text-gray-600 mt-2 transition-colors">
-                                marketing@lanyardkendal.com
+                                marketing@mitrajogja.com
                                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                                 </svg>
@@ -195,11 +195,11 @@
                         <div class="flex-1">
                             <h3 class="text-xl font-medium text-gray-900 mb-2">Alamat</h3>
                             <p class="text-gray-600 mb-4">
-                                Jl. Cifor Batuhulung No.Rt.03/02, Balungbangjaya, <br>
-                                Kec. Bogor Bar., Kota Bogor, <br>
-                                Jawa Barat 16116
+                                Jl. Kaliurang KM 5, Sleman, <br>
+                                Yogyakarta 55281, <br>
+                                D.I. Yogyakarta
                             </p>
-                            <a href="https://www.google.com/maps/search/?api=1&query=Jl.%20Cifor%20Batuhulung%20No.Rt.03%2F02%2C%20Balungbangjaya%2C%20Kec.%20Bogor%20Bar.%2C%20Kota%20Bogor%2C%20Jawa%20Barat%2016116"
+                            <a href="https://www.google.com/maps/search/?api=1&query=Jl.%20Kaliurang%20KM%205%2C%20Sleman%2C%20Yogyakarta%2055281"
                                target="_blank" rel="noopener noreferrer"
                                class="inline-flex items-center text-gray-900 font-medium hover:text-gray-600 transition-colors">
                                 Lihat di Google Maps
@@ -245,13 +245,13 @@
         <div class="text-center mb-12">
             <p class="text-xs tracking-[0.2em] text-gray-500 uppercase mb-4">📍 LOKASI</p>
             <h2 class="text-3xl sm:text-4xl text-gray-900 mb-4">Temukan Kami</h2>
-            <p class="text-lg text-gray-600">Kunjungi workshop kami di Bogor</p>
+            <p class="text-lg text-gray-600">Kunjungi kantor kami di Yogyakarta</p>
         </div>
 
         <div class="bg-white rounded-2xl overflow-hidden shadow-sm">
             <div class="aspect-video bg-gray-100">
                 <iframe
-                    src="https://www.google.com/maps?q=Jl.%20Cifor%20Batuhulung%20No.Rt.03%2F02%2C%20Balungbangjaya%2C%20Kec.%20Bogor%20Bar.%2C%20Kota%20Bogor%2C%20Jawa%20Barat%2016116&output=embed"
+                    src="https://www.google.com/maps?q=Jl.%20Kaliurang%20KM%205%2C%20Sleman%2C%20Yogyakarta%2055281&output=embed"
                     width="100%"
                     height="100%"
                     style="border:0;"

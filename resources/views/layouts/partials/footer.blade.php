@@ -1,26 +1,26 @@
 <footer class="bg-gray-950">
     <!-- Top Section - Logo, Address & Social -->
     <div class="border-b border-white/10">
-        <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 py-12">
-            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
+        <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 py-6 sm:py-12">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 sm:gap-8">
                 <!-- Logo & Company Name -->
                 <div class="text-center lg:text-left">
-                    <p class="text-xs tracking-[0.3em] text-gray-400 mb-1">LANYARD</p>
-                    <h3 class="text-2xl md:text-3xl text-white tracking-wider">KENDAL</h3>
-                    <p class="text-xs tracking-[0.2em] text-gray-500 mt-1">BOGOR</p>
+                    <p class="text-xs tracking-[0.3em] text-gray-400 mb-1">MITRA</p>
+                    <h3 class="text-xl sm:text-2xl md:text-3xl text-white tracking-wider">JOGJA</h3>
+                    <p class="text-xs tracking-[0.2em] text-gray-500 mt-1">YOGYAKARTA</p>
                 </div>
 
                 <!-- Address & Contact -->
-                <div class="text-gray-400 text-sm space-y-1">
-                    <p>Jl. Cifor Batuhulung No.Rt.03/02, Bogor, Jawa Barat 16116</p>
+                <div class="text-gray-400 text-xs sm:text-sm space-y-1">
+                    <p>Jl. Kaliurang KM 5, Sleman, Yogyakarta 55281</p>
                     <p>Tel. <a href="tel:+6281316509191" class="hover:text-white transition-colors">+62 813-1650-9191</a></p>
-                    <p><a href="mailto:contact@lanyardkendal.com" class="hover:text-white transition-colors">contact@lanyardkendal.com</a></p>
+                    <p><a href="mailto:contact@mitrajogja.com" class="hover:text-white transition-colors">contact@mitrajogja.com</a></p>
                 </div>
 
                 <!-- Social Icons -->
-                <div class="flex items-center gap-8">
+                <div class="flex items-center gap-4 sm:gap-8">
                     <a href="https://www.facebook.com/profile.php?id=100093289943847" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                         </svg>
                     </a>
@@ -46,67 +46,67 @@
 
     <!-- Middle Section - Links -->
     <div class="border-b border-white/10">
-        <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 py-12">
-            <div class="flex flex-col lg:flex-row justify-between gap-10">
+        <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 py-6 sm:py-12">
+            <div class="flex flex-col lg:flex-row justify-between gap-5 sm:gap-10">
                 <!-- Left Links -->
-                <div class="flex flex-col sm:flex-row gap-10 sm:gap-20">
-                    <div class="space-y-4">
-                        <a href="tel:+6281316509191" class="block text-gray-400 hover:text-white text-lg transition-colors">Tel. +62 813-1650-9191</a>
-                        <a href="{{ route('tentang') }}" class="block text-gray-400 hover:text-white text-lg transition-colors">Tentang Kami</a>
-                        <a href="{{ route('portfolio') }}" class="block text-gray-400 hover:text-white text-lg transition-colors">Portfolio</a>
-                        <a href="{{ route('blog') }}" class="block text-gray-400 hover:text-white text-lg transition-colors">Blog</a>
+                <div class="flex flex-col sm:flex-row gap-5 sm:gap-20">
+                    <div class="space-y-2 sm:space-y-4">
+                        <a href="tel:+6281316509191" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Tel. +62 813-1650-9191</a>
+                        <a href="{{ route('tentang') }}" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Tentang Kami</a>
+                        <a href="{{ route('portfolio') }}" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Portfolio</a>
+                        <a href="{{ route('blog') }}" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Blog</a>
                     </div>
-                    <div class="space-y-4">
-                        <a href="{{ route('kontak') }}" class="block text-gray-400 hover:text-white text-lg transition-colors">Hubungi Kami</a>
-                        <a href="{{ route('produk') }}" class="block text-gray-400 hover:text-white text-lg transition-colors">Produk</a>
-                        <a href="#" class="block text-gray-400 hover:text-white text-lg transition-colors">FAQ</a>
-                        <a href="#" class="block text-gray-400 hover:text-white text-lg transition-colors">Karir</a>
+                    <div class="space-y-2 sm:space-y-4">
+                        <a href="{{ route('kontak') }}" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Hubungi Kami</a>
+                        <a href="{{ route('produk.index') }}" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Produk</a>
+                        <a href="#" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">FAQ</a>
+                        <a href="#" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Karir</a>
                     </div>
                 </div>
 
                 <!-- Center - Media / Press Links -->
-                <div class="space-y-4">
-                    <p class="text-xs tracking-[0.2em] text-gray-500 uppercase mb-4">Diliput Oleh</p>
-                    <a href="https://www.kompas.com" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-white text-lg transition-colors">Kompas.com</a>
-                    <a href="https://www.detik.com" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-white text-lg transition-colors">Detik.com</a>
-                    <a href="https://www.tribunnews.com" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-white text-lg transition-colors">Tribunnews.com</a>
-                    <a href="https://www.cnnindonesia.com" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-white text-lg transition-colors">CNN Indonesia</a>
+                <div class="space-y-2 sm:space-y-4">
+                    <p class="text-xs tracking-[0.2em] text-gray-500 uppercase mb-2 sm:mb-4">Diliput Oleh</p>
+                    <a href="https://www.kompas.com" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Kompas.com</a>
+                    <a href="https://www.detik.com" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Detik.com</a>
+                    <a href="https://www.tribunnews.com" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Tribunnews.com</a>
+                    <a href="https://www.cnnindonesia.com" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">CNN Indonesia</a>
                 </div>
 
                 <!-- Right Links & Badges -->
-                <div class="flex flex-col sm:flex-row gap-10 sm:gap-20 lg:items-start">
-                    <div class="space-y-4 lg:text-right">
-                        <a href="#" class="block text-gray-400 hover:text-white text-lg transition-colors">Privacy / Legal</a>
-                        <a href="#" class="block text-gray-400 hover:text-white text-lg transition-colors">Syarat & Ketentuan</a>
+                <div class="flex flex-col sm:flex-row gap-5 sm:gap-20 lg:items-start">
+                    <div class="space-y-2 sm:space-y-4 lg:text-right">
+                        <a href="#" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Privacy / Legal</a>
+                        <a href="#" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">Syarat & Ketentuan</a>
                     </div>
-                    <div class="space-y-4 lg:text-right">
-                        <a href="https://wa.me/6281316509191" class="block text-gray-400 hover:text-white text-lg transition-colors">WA: +62 813-1650-9191</a>
-                        <a href="https://lanyardkendal.com" class="block text-gray-400 hover:text-white text-lg transition-colors">lanyardkendal.com</a>
+                    <div class="space-y-2 sm:space-y-4 lg:text-right">
+                        <a href="https://wa.me/6281316509191" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">WA: +62 813-1650-9191</a>
+                        <a href="https://mitrajogja.com" class="block text-gray-400 hover:text-white text-sm sm:text-lg transition-colors">mitrajogja.com</a>
                     </div>
                 </div>
             </div>
 
             <!-- Trust Badges -->
-            <div class="flex flex-col sm:flex-row justify-end items-center gap-10 mt-12">
+            <div class="flex flex-col sm:flex-row justify-end items-center gap-4 sm:gap-10 mt-6 sm:mt-12">
                 <div class="flex items-center gap-3 text-white">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                     </svg>
-                    <span class="text-lg tracking-wider">GARANSI <span class="font-bold">100%</span></span>
+                    <span class="text-sm sm:text-lg tracking-wider">GARANSI <span class="font-bold">100%</span></span>
                 </div>
-                <div class="text-white border-l border-white/30 pl-8">
-                    <p class="text-base tracking-wider text-gray-400">BEST QUALITY</p>
-                    <p class="text-lg font-bold tracking-wider">GUARANTEE</p>
+                <div class="text-white border-l border-white/30 pl-4 sm:pl-8">
+                    <p class="text-xs sm:text-base tracking-wider text-gray-400">BEST QUALITY</p>
+                    <p class="text-sm sm:text-lg font-bold tracking-wider">GUARANTEE</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bottom Bar -->
-    <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 py-6">
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-            <p>LanyardKendal &copy; {{ date('Y') }}</p>
-            <p>by <span class="text-gray-400">LanyardKendal Team</span></p>
+    <div class="w-full max-w-[1920px] mx-auto px-6 sm:px-10 lg:px-16 xl:px-24 py-3 sm:py-6">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-2 text-xs sm:text-sm text-gray-500">
+            <p>MitraJogja &copy; {{ date('Y') }}</p>
+            <p>by <span class="text-gray-400">MitraJogja Team</span></p>
         </div>
     </div>
 </footer>

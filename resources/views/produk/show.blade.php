@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $product['name'] . ' - LanyardKendal')
-@section('description', 'Detail produk ' . $product['name'] . ' dari LanyardKendal. ' . $product['description'])
+@section('title', $product['name'] . ' - MitraJogja')
+@section('description', 'Detail produk ' . $product['name'] . ' dari MitraJogja. ' . $product['description'])
 
 @section('content')
 
@@ -11,7 +11,7 @@
         <nav class="flex items-center space-x-2 text-sm text-gray-500">
             <a href="{{ route('home') }}" class="hover:text-gray-900 transition-colors">Home</a>
             <span>/</span>
-            <a href="{{ route('produk') }}" class="hover:text-gray-900 transition-colors">Produk</a>
+            <a href="{{ route('produk.index') }}" class="hover:text-gray-900 transition-colors">Produk</a>
             <span>/</span>
             <span class="text-gray-900">{{ $product['name'] }}</span>
         </nav>
@@ -130,7 +130,7 @@
 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="https://wa.me/6281316509191?text=Halo%20LanyardKendal,%20saya%20ingin%20order%20{{ urlencode($product['name']) }}"
+                    <a href="https://wa.me/6281316509191?text=Halo%20MitraJogja,%20saya%20ingin%20order%20{{ urlencode($product['name']) }}"
                        target="_blank" rel="noopener noreferrer"
                        class="flex-1 bg-gray-900 hover:bg-gray-800 text-white py-4 px-6 text-center font-medium transition-all hover:scale-[1.02]">
                         <span class="flex items-center justify-center gap-2">
@@ -140,7 +140,7 @@
                             Order via WhatsApp
                         </span>
                     </a>
-                    <a href="{{ route('produk') }}"
+                    <a href="{{ route('produk.index') }}"
                        class="flex-1 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white py-4 px-6 text-center font-medium transition-all">
                         Lihat Produk Lain
                     </a>

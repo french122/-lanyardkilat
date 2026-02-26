@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Blog - LanyardKendal')
-@section('description', 'Baca artikel terbaru seputar lanyard, tips, dan informasi menarik dari LanyardKendal.')
+@section('title', 'Blog - MitraJogja')
+@section('description', 'Baca artikel terbaru, tips, dan informasi menarik dari MitraJogja.')
 
 @section('content')
 

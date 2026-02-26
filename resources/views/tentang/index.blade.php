@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Tentang Kami - LanyardKendal')
-@section('description', 'Kenali lebih dekat LanyardKendal, spesialis cetak lanyard custom terpercaya dengan pengalaman melayani 1259+ klien di Indonesia.')
+@section('title', 'Tentang Kami - MitraJogja')
+@section('description', 'Kenali lebih dekat MitraJogja, spesialis layanan terpercaya dengan pengalaman melayani 1259+ klien di Indonesia.')
 
 @section('content')
 
@@ -11,7 +11,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
                 <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-                    Tentang <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">LanyardKendal</span>
+                    Tentang <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-600">MitraJogja</span>
                 </h1>
                 <p class="text-lg sm:text-xl text-gray-600 leading-relaxed mb-6">
                     Kami berfokus pada produksi lanyard custom dengan standar finishing rapi, warna tajam, dan proses kerja yang terstruktur—untuk kebutuhan corporate, event, maupun institusi.
@@ -21,8 +21,8 @@
                 </p>
             </div>
             <div>
-                <img src="{{ asset('images/illustrations/lanyard-2.svg') }}" 
-                     alt="Ilustrasi tim produksi (placeholder)" 
+                <img src="{{ asset('images/illustrations/lanyard-2.svg') }}"
+                     alt="Ilustrasi tim produksi (placeholder)"
                      class="rounded-2xl shadow-xl" loading="lazy" decoding="async">
             </div>
         </div>
@@ -69,7 +69,7 @@
                     Menjadi perusahaan percetakan lanyard terdepan di Indonesia dengan standar kualitas internasional dan pelayanan terbaik yang mampu memenuhi kebutuhan setiap klien dengan cepat dan profesional.
                 </p>
             </div>
-            
+
             <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-10 rounded-3xl border border-orange-100 shadow-sm">
                 <div class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@
             <h2 class="text-4xl font-bold text-gray-900 mb-4">Mengapa Memilih Kami?</h2>
             <p class="text-xl text-gray-600">Keunggulan yang membuat kami berbeda</p>
         </div>
-        
+
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-lg transition-shadow">
                 <div class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -120,7 +120,7 @@
                 <h3 class="text-2xl font-bold text-gray-900 mb-4">Produksi Express</h3>
                 <p class="text-gray-600">Estimasi 1 hari untuk pesanan tertentu. Kami bantu cek timeline terbaik sesuai jumlah dan kebutuhan Anda.</p>
             </div>
-            
+
             <div class="bg-white p-8 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-lg transition-shadow">
                 <div class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,7 +130,7 @@
                 <h3 class="text-2xl font-bold text-gray-900 mb-4">Kualitas Terjamin</h3>
                 <p class="text-gray-600">Material pilihan dan proses printing yang konsisten untuk hasil rapi dan warna tajam.</p>
             </div>
-            
+
             <div class="bg-white p-8 rounded-2xl border border-gray-200/70 shadow-sm hover:shadow-lg transition-shadow">
                 <div class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
                     <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@
             <h2 class="text-4xl font-bold text-gray-900 mb-4">Tim Kami</h2>
             <p class="text-xl text-gray-600">Profesional berpengalaman siap melayani Anda</p>
         </div>
-        
+
         <div class="grid md:grid-cols-4 gap-8">
             <div class="text-center">
                 <div class="relative mb-6 inline-block">
@@ -162,7 +162,7 @@
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Agus Mulyadi</h3>
                 <p class="text-gray-600">Founder & CEO</p>
             </div>
-            
+
             <div class="text-center">
                 <div class="relative mb-6 inline-block">
                     <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto flex items-center justify-center text-white text-4xl sm:text-5xl font-bold ring-1 ring-orange-200">
@@ -172,7 +172,7 @@
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Siti Putri</h3>
                 <p class="text-gray-600">Production Manager</p>
             </div>
-            
+
             <div class="text-center">
                 <div class="relative mb-6 inline-block">
                     <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto flex items-center justify-center text-white text-4xl sm:text-5xl font-bold ring-1 ring-orange-200">
@@ -182,7 +182,7 @@
                 <h3 class="text-xl font-bold text-gray-900 mb-2">Budi Wijaya</h3>
                 <p class="text-gray-600">Design Lead</p>
             </div>
-            
+
             <div class="text-center">
                 <div class="relative mb-6 inline-block">
                     <div class="w-32 h-32 sm:w-40 sm:h-40 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full mx-auto flex items-center justify-center text-white text-4xl sm:text-5xl font-bold ring-1 ring-orange-200">
@@ -203,7 +203,7 @@
         <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
             Konsultasikan kebutuhan Anda—kami bantu dari desain, pilihan bahan, sampai estimasi produksi.
         </p>
-        <a href="https://wa.me/6281316509191?text=Halo%20LanyardKendal,%20saya%20ingin%20konsultasi%20pembuatan%20lanyard" 
+        <a href="https://wa.me/6281316509191?text=Halo%20MitraJogja,%20saya%20ingin%20konsultasi"
               target="_blank" rel="noopener noreferrer"
            class="inline-flex items-center justify-center px-8 py-4 bg-white text-orange-600 font-bold rounded-full hover:bg-white/95 transition-colors shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-600">
             <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
